@@ -15,7 +15,7 @@ function required(key: string): string {
 }
 
 export const env = {
-  baseUrl: required('BASE_URL'),
+  baseUrl: process.env.BASE_URL ?? 'https://sampleapp.tricentis.com/101/',
   envName: process.env.ENV_NAME ?? 'QA',
   headless: (process.env.HEADLESS ?? 'true') === 'true',
   workers: Number(process.env.WORKERS ?? 2),
