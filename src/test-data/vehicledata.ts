@@ -20,6 +20,4 @@ export interface E2EFlow{
     occupation:string;
     hobby:string;
     website:string;
-
-
 }

@@ -22,10 +22,10 @@ export const env = {
   retries: Number(process.env.RETRIES ?? 0),
   defaultTimeout: Number(process.env.DEFAULT_TIMEOUT ?? 30000),
   expectTimeout: Number(process.env.EXPECT_TIMEOUT ?? 15000),
-  quote: {
-    email: required('QUOTE_EMAIL'),
-    phone: required('QUOTE_PHONE'),
-    username: required('QUOTE_USERNAME'),
-    password: required('QUOTE_PASSWORD'),
-  },
+  // quote: {
+  //   email: required('QUOTE_EMAIL'),
+  //   phone: required('QUOTE_PHONE'),
+  //   username: required('QUOTE_USERNAME'),
+  //   password: required('QUOTE_PASSWORD'),
+  // },
 };
