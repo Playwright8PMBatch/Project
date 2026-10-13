@@ -23,7 +23,7 @@ test1("Apply AUtomobile Insurance", async({page, homePage, vehicleData})=>{
 
     for(const i of data){
     await vehicleData.EnterVehicleData(i);
-    await vehicleData.clickNext();
+    // await vehicleData.clickNext();
 
     // Enter IsnurantData
     
