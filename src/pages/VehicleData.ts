@@ -12,7 +12,7 @@ export class VehicleDataPage{
         console.log("make Value:", data.make);
         console.log(await this.page.locator('#make').isVisible());
 
-        await this.page.locator('#make').selectOption(data.make,{timeout:5000});
+        await this.page.locator('#make').selectOption(data.make);
         await this.page.locator('#engineperformance').fill(data.enginePerformance);
         await this.page.locator('#dateofmanufacture').fill(data.dateOfManufacture);
         await this.page.locator('#numberofseats').selectOption(data.numberOfSeats);
